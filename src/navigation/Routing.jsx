@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
-import About from '../Pages/About';
-import Projects from '../Pages/Projects';
-import Skills from '../Pages/Skills';
-import Contact from '../Pages/Contact';
+import About from '../pages/About';
+import Projects from '../pages/Projects';
+import Skills from '../pages/Skills';
+import Contact from '../pages/Contact';
 
 
 export default function Routing() {
