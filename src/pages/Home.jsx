@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import heroImg from '/avatar.jpeg'; // Make sure this path is correct and the image exists
+import heroImg from '/avatar.jpeg'; // Use correct relative path
 
 export default function Home() {
   return (
@@ -31,13 +31,15 @@ export default function Home() {
           >
             Contact Me
           </Link>
-          <a
-            href="/Akshay_Resume.pdf"
-            download
-            className="px-6 py-2 rounded-full border border-purple-400 text-purple-300 font-semibold hover:bg-purple-400 hover:text-black transition shadow-[0_0_10px_rgba(168,85,247,0.6)]"
-          >
-            Download CV
-          </a>
+         <a
+  href="/Akshay-Resume.pdf"
+  target="_blank"
+  download="Akshay-Resume.pdf"
+  className="px-6 py-2 rounded-full border border-purple-400 text-purple-300 font-semibold hover:bg-purple-400 hover:text-black transition shadow-[0_0_10px_rgba(168,85,247,0.6)]"
+>
+  Download CV
+</a>
+
         </div>
       </div>
 

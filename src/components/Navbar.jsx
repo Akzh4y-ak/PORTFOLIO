@@ -60,21 +60,23 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <ul className="absolute top-20 right-6 bg-black/90 backdrop-blur-xl rounded-xl p-6 space-y-4 text-white text-sm uppercase z-40 shadow-md md:hidden">
-          {navLinks.map((link) => (
-            <li key={link.name}>
-              <Link
-                to={link.path}
-                onClick={() => setIsOpen(false)}
-                className={`block hover:text-cyan-300 transition duration-200 ${
-                  location.pathname === link.path ? 'text-cyan-400' : ''
-                }`}
-              >
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className="fixed top-20 right-4 z-[999] bg-[#0f172a] border border-cyan-400 backdrop-blur-md rounded-xl p-6 w-48 shadow-lg md:hidden">
+          <ul className="space-y-4 text-white text-sm uppercase">
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <Link
+                  to={link.path}
+                  onClick={() => setIsOpen(false)}
+                  className={`block hover:text-cyan-300 transition duration-200 ${
+                    location.pathname === link.path ? 'text-cyan-400' : ''
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
     </>
   );
