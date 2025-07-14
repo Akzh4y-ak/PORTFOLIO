@@ -32,7 +32,7 @@ export default function Contact() {
 
           <div className="flex gap-6 mt-4">
             <a
-              href="https://github.com/yourgithub"
+              href="https://github.com/Akzh4y-ak"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-cyan-400 transition"
@@ -40,7 +40,7 @@ export default function Contact() {
               <Github size={28} />
             </a>
             <a
-              href="https://linkedin.com/in/yourlinkedin"
+              href="https://linkedin.com/in/akshay-k"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-cyan-400 transition"
