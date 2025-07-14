@@ -40,7 +40,7 @@ export default function Contact() {
               <Github size={28} />
             </a>
             <a
-              href="https://linkedin.com/in/akshay-k"
+              href="https://www.linkedin.com/in/akshay-k-062553352/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-cyan-400 transition"
