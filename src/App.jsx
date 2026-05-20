@@ -18,6 +18,8 @@ function App() {
 
       {/* Page content */}
       <div className="relative z-10">
+        {/* Top fade-out overlay for scrolling content */}
+        <div className="fixed top-0 left-0 w-full h-28 bg-gradient-to-b from-[#05060f] via-[#05060f]/95 to-transparent pointer-events-none z-40"></div>
         <Navbar />
         <Routing />
       </div>

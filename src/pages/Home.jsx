@@ -15,12 +15,11 @@ export default function Home() {
         </h1>
 
         <h2 className="text-xl sm:text-2xl font-semibold text-cyan-300 drop-shadow">
-          Frontend Developer & UI Engineer
+          Python Developer & Full-Stack Engineer
         </h2>
 
         <p className="text-cyan-100/90 leading-relaxed drop-shadow-md">
-          I craft beautiful, functional, and performance-driven websites using modern web technologies.
-          Passionate about clean code and immersive UI experiences.
+          I build robust backend architectures, scalable REST APIs, and high-performance databases using Python, Django, and MySQL, paired with beautiful, interactive user interfaces.
         </p>
 
         {/* CTA BUTTONS */}

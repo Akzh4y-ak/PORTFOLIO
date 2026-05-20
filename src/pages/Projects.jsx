@@ -1,20 +1,23 @@
 export default function Projects() {
   const projects = [
     {
-      title: "E-Commerce Website",
-      desc: "A fully functional shopping website built with React, Redux Toolkit, and DummyJSON API.",
-      tech: ["React", "Redux", "Tailwind"],
-      demo: "https://your-demo-link.com",
-      code: "https://github.com/your-repo/ecommerce",
+      title: "Univerzo - Music Streaming App",
+      desc: "A music app focused on smooth browsing, playback, playlists, and clean user flows. Worked across the frontend experience and backend API structure to keep the product fast, organized, and easy to extend.",
+      tech: ["React", "JavaScript", "Python", "Django", "MySQL"],
+      status: "Product project",
     },
     {
-      title: "Portfolio Website",
-      desc: "A glowing portfolio built with modern animations and TailwindCSS.",
-      tech: ["React", "Tailwind"],
-      demo: "https://your-portfolio.com",
-      code: "https://github.com/your-repo/portfolio",
+      title: "Sayonara - Random Video Chat Platform",
+      desc: "An Omegle-style application for connecting users into random live conversations. Built the core matching flow, real-time communication layer, and responsive interface for a simple peer-to-peer chat experience.",
+      tech: ["React", "WebRTC", "WebSockets", "Django", "REST APIs"],
+      status: "Real-time app",
     },
-    // Add more as needed
+    {
+      title: "IPTV Backend Systems",
+      desc: "Currently working on backend systems for an IPTV company, including API development, database design, stream/package management, authentication flows, and admin-side tools for daily operations.",
+      tech: ["Python", "Django", "DRF", "MySQL", "API Integration"],
+      status: "Current company work",
+    },
   ];
 
   return (
@@ -34,6 +37,9 @@ export default function Projects() {
             <h3 className="text-xl font-bold mb-2 text-cyan-300">
               {project.title}
             </h3>
+            <p className="text-sm font-semibold text-purple-300 mb-3">
+              {project.status}
+            </p>
             <p className="text-gray-300 mb-4">{project.desc}</p>
             <div className="flex gap-2 flex-wrap text-sm mb-4">
               {project.tech.map((tech, i) => (
@@ -45,24 +51,30 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-            <div className="flex gap-4">
-              <a
-                href={project.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 text-sm font-semibold border border-purple-400 rounded-full text-purple-300 hover:bg-purple-500 hover:text-white transition"
-              >
-                Live Demo
-              </a>
-              <a
-                href={project.code}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 text-sm font-semibold border border-cyan-400 rounded-full text-cyan-300 hover:bg-cyan-500 hover:text-white transition"
-              >
-                Source Code
-              </a>
-            </div>
+            {(project.demo || project.code) && (
+              <div className="flex gap-4">
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 text-sm font-semibold border border-purple-400 rounded-full text-purple-300 hover:bg-purple-500 hover:text-white transition"
+                  >
+                    Live Demo
+                  </a>
+                )}
+                {project.code && (
+                  <a
+                    href={project.code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 text-sm font-semibold border border-cyan-400 rounded-full text-cyan-300 hover:bg-cyan-500 hover:text-white transition"
+                  >
+                    Source Code
+                  </a>
+                )}
+              </div>
+            )}
           </div>
         ))}
       </div>

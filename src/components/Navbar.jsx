@@ -21,7 +21,7 @@ export default function Navbar() {
         flex items-center justify-between
         border border-cyan-400 rounded-full backdrop-blur-md
         shadow-[0_0_30px_rgba(34,211,238,0.4)]
-        bg-transparent text-white"
+        bg-[#05060f]/80 text-white"
       >
         {/* Logo */}
         <Link to="/" className="text-lg font-bold tracking-wide px-3 py-1 rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 text-white shadow-md">

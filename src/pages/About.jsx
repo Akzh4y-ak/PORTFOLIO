@@ -8,24 +8,28 @@ export default function About() {
         </h2>
 
         <p className="text-gray-200 leading-relaxed text-base md:text-lg">
-          I’m Akshay, a passionate Frontend Developer focused on creating modern, responsive, and interactive web experiences. I specialize in React, Tailwind CSS, and building sleek UIs that are both functional and visually stunning.
+          I’m Akshay, a passionate Python Developer and Full-Stack Engineer focused on building robust backend systems, scalable REST APIs, and high-performance databases. I specialize in Python, Django, and MySQL, while also leveraging React and Tailwind CSS to craft beautiful, responsive UIs.
         </p>
 
         <p className="text-gray-300 leading-relaxed">
-          My journey started with a love for clean design and code, and has grown into full-fledged frontend engineering. I believe in blending performance with aesthetics — making websites that load fast and leave an impression.
+          My journey started with a love for clean UI design and code, and has evolved into full-lifecycle web engineering. I believe in writing modular backend code, optimizing database queries, and creating seamless API integrations that link robust backend logic to modern, intuitive user interfaces.
         </p>
 
         <div className="mt-4">
           <h3 className="text-xl font-semibold text-cyan-400 mb-2">Technologies I work with:</h3>
           <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 text-sm text-gray-200">
+            <li>Python</li>
+            <li>Django</li>
+            <li>MySQL</li>
+            <li>REST APIs</li>
             <li>React JS</li>
             <li>Tailwind CSS</li>
             <li>JavaScript (ES6+)</li>
-            <li>Redux Toolkit</li>
             <li>Git & GitHub</li>
-            <li>HTML5 & CSS3</li>
-            <li>Figma to Code</li>
+            <li>Database Design</li>
             <li>API Integration</li>
+            <li>HTML5 & CSS3</li>
+            <li>Redux Toolkit</li>
           </ul>
         </div>
       </div>

@@ -5,17 +5,21 @@ import reactLogo from "../assets/react.png";
 import tailwindLogo from "../assets/tailwind.png";
 import gitLogo from "../assets/git.png";
 import githubLogo from "../assets/github.png";
-import bootstrapLogo from "../assets/bootstrap.png";
+import pythonLogo from "../assets/python.svg";
+import djangoLogo from "../assets/django.svg";
+import mysqlLogo from "../assets/mysql.svg";
 
 const skills = [
-  { name: "HTML5", logo: htmlLogo },
-  { name: "CSS3", logo: cssLogo },
+  { name: "Python", logo: pythonLogo },
+  { name: "Django", logo: djangoLogo },
+  { name: "MySQL", logo: mysqlLogo },
   { name: "JavaScript", logo: jsLogo },
   { name: "React JS", logo: reactLogo },
   { name: "Tailwind CSS", logo: tailwindLogo },
-  { name: "Bootstrap", logo: bootstrapLogo },
   { name: "Git", logo: gitLogo },
   { name: "GitHub", logo: githubLogo },
+  { name: "HTML5", logo: htmlLogo },
+  { name: "CSS3", logo: cssLogo },
 ];
 
 export default function Skills() {
